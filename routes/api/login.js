@@ -24,6 +24,7 @@ router.post('/', (req, res, next) => {
                     req.session['1909_newsapp']=result[0]._id
                     res.send({err:0,msg:'登录成功',data:result[0]})
                 }else{
+                 
                     res.send({err:1,msg:'用户名不存在或者密码有误'})
                 }
             }else{
